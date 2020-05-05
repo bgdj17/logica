@@ -1,7 +1,6 @@
 const read = require('readline-sync');
-var option = '';
-option  = read.question('Digita alguma coisa aê parça:  ');
-var palavra = option.split('');
+var palavra  = read.question('Digita o numero.');
+var letra = palavra.charAt();
 for (let i = 0; i < option.length; i++) {
   if(option.charAt(i) ===  'a') {
    //maca = ['m', 'a', 'c', 'a']
