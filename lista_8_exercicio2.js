@@ -1,11 +1,14 @@
-var fs = require("fs")
-var rs = require("readline-sync")
-var valorRaio= rs.questionInt("Digite o valor do RAIO para calcular o volume da esfera. ")
-function calculoVolume(raio){
-    return 4/3*3.14* (raio**3)/3
+var rs = require('readline-sync');
+var fs = require('fs');
+function devolveCarro() {
+    var carro = {};
+    carro.marca = rs.question('Qual a marca do automovel: ');
+    carro.modelo = rs.question('Escolha o modelo do seu automovel: ');
+    carro.cor = rs.question('Escoha a cor do seu automovel: ');
+    return carro;
 }
-console.log(calculoVolume(valorRaio))
-
-
-var valorRaioSerializado = JSON.stringify(valorRaio);
-fs.writeFileSync(valorRaio, valorRaioSerializado)
+var automovel = devolveCarro();
+console.log("Seu automovel é um", automovel.marca, "de modelo", automovel.modelo, "de cor", automovel.cor);
+var automovelEmString = JSON.stringify(automovel);
+var caminhoDoArquivo = './data/carro.json';
+fs.writeFileSync(caminhoDoArquivo, automovelEmString);

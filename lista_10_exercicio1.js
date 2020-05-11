@@ -14,3 +14,4 @@ console.log(carro.marca)
 var objSerializado = JSON.stringify(carro)
 var caminhoArquivo = "carro.json"
 fs.writeFileSync(caminhoArquivo, objSerializado)
+
