@@ -9,16 +9,16 @@ for (var i = 0; i < quantosNumeros; i++) {
 
 while (true) {
     var houveTroca = false;
-    for (var pivo = 0; pivo < numeros.length - 1; pivo++)    {
-        var n1 = numeros[pivo];
-        var n2 = numeros[pivo + 1];
+    for (var i = 0; i < numeros.length - 1; i++)    {
+        var n1 = numeros[i];
+        var n2 = numeros[i + 1];
         if (n1 > n2) {
-            numeros[pivo] = n2;
-            numeros[pivo + 1] = n1;
+            numeros[i] = n2;
+            numeros[i + 1] = n1;
             houveTroca = true;
         }
     }
-    if (!houveTroca) {
+    if (houveTroca == false) {
         break;
     }
 }

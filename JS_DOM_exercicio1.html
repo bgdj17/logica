@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <header id="cabecalho"> Bem vindo ao meu site!</header>
+    <br>
+    <button onclick="mudartext()">Muda cabeçalho</button> <input type="text">
+    <br>
+
+    <script>
+        function mudartext(){
+            var input = document.getElementById("cabecalho")
+            console.log(input)
+            input.innerHTML= prompt("Digite a frase.")
+
+        }
+
+    </script>
+</body>
+</html>

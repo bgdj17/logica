@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <header id="cabecalho"> Bem vindo ao meu site!</header>
+    <br>
+    <button onclick="mudartext()">Muda cabeçalho</button> <input id="texto" type="text">
+    <br>
+    <button onclick="divideFrase()">Divide frase</button>
+
+    <script>
+        function mudartext(){
+            var input = document.getElementById("cabecalho")
+            input.innerHTML= prompt("Digite a frase.")
+        }
+        function divideFrase(){
+            var input = document.getElementById("texto")
+            var texto = input.value;
+            console.log(texto)
+        }
+        function imprimeLista(texto){
+            console.log("imprime lista"+ texto)
+            var lista = document.createElement('ul');
+            var palavraFragmentada = texto.split(' ');
+            for (let i = 0; i < palavraFragmentada.length; i++) {
+                var palavra= palavraFragmentada[i]
+                var item= document.createElement("li")
+              
+            }
+            lista.innerHTML = '<'
+            document.body.append(lista)
+        }
+    </script>
+</body>
+</html>
