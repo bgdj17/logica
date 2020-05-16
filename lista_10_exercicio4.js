@@ -7,10 +7,6 @@ var fs= require('fs')
 // Após cadastrar o carro o programa deve novamente solicitar o usuário se quer exibir ou
 // adicionar, caso o usuário escolha exibir deve ser exibido todos os carros cadastrados.
 var escolhaUser= rs.keyInYN("Deseja adicionar(Y) ou exibir(N)?")
+if(escolhaUser=="y"){
 
-
-// var caminhoObj = 'carro.json'
-// var objDeserializado = fs.readFileSync(caminhoObj)
-// var carro =JSON.parse(objDeserializado)
-
-// console.log(carro)
+}

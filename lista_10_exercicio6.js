@@ -17,3 +17,5 @@ var cadastro= new User("Bruna", "Jesus","34", 10682758710)
 var cadastroEspecial = new User("Clayson", "Pinto",52, 19000,00 )
 
 console.log(cadastro)
+console.log(cadastroEs)
+replace()

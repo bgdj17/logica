@@ -1,4 +1,5 @@
 
+// área = b.h/2
 
 var rs = require("readline-sync")
 
