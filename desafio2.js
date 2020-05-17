@@ -261,7 +261,7 @@ function verArr4(num) {
     }
   }
   // 800
-  if (n[0] == 2) {
+  if (n[0] == 8) {
     if (n[1] == 0 && n[2] == 0) {
       return "oitocentos"
     }
@@ -301,10 +301,11 @@ function verArr4(num) {
 }
 function verArr5() {
   var n = num.toString()
-  var juntar = n[1] + n[2]
   var juntar2 = n[2] + n[3]
+  var juntar3 =n[1]+n[2]+n[3]
   
-  // 1009
+  
+  // 1000
   if (n[0] == 1) {
     if (n[1] == 0 && n[2] == 0){
       if(n[3] == 0) {
@@ -318,14 +319,222 @@ function verArr5() {
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "mil e " + verArr2(juntar2)
-      }
+      } //112
         else if (juntar2 >= 20 && juntar2 < 100) {
         return "mil e " + verArr3(juntar2)
         }
       }
       if (n[1] !== 0 && n[2] !== 0){
-       if (juntar2 >= 100 && juntar2 < 999) {
-        return "mil  e " + verArr4(juntar2)
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "mil e " + verArr4(juntar3)
+    
+        }
+}
+
+  // 2000
+  if (n[0] == 2) {
+    if (n[1] == 0 && n[2] == 0){
+      if(n[3] == 0) {
+      return "dois mil"
+      }        
+      if (n[3] < 10) {
+          return "dois mil e " + verArr1(n[3])
+        }
+      }
+    }
+      if (n[1] == 0 && n[2] !== 0){
+       if (juntar2 >= 10 && juntar2 < 20) {
+        return "dois mil e " + verArr2(juntar2)
+      } 
+        else if (juntar2 >= 20 && juntar2 < 100) {
+        return "dois mil e " + verArr3(juntar2)
+        }
+      }
+      if (n[1] !== 0 && n[2] !== 0){
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "dois mil e " + verArr4(juntar3)
+    
+        }
+}
+
+  // 3000
+  if (n[0] == 3) {
+    if (n[1] == 0 && n[2] == 0){
+      if(n[3] == 3) {
+      return "três mil"
+      }        
+      if (n[3] < 10) {
+          return "três mil e " + verArr1(n[3])
+        }
+      }
+    }
+      if (n[1] == 0 && n[2] !== 0){
+       if (juntar2 >= 10 && juntar2 < 20) {
+        return "três mil e " + verArr2(juntar2)
+      } //112
+        else if (juntar2 >= 20 && juntar2 < 100) {
+        return "três mil e " + verArr3(juntar2)
+        }
+      }
+      if (n[1] !== 0 && n[2] !== 0){
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "três mil e " + verArr4(juntar3)
+    
+        }
+}
+
+  // 4000
+  if (n[0] == 4) {
+    if (n[1] == 0 && n[2] == 0){
+      if(n[3] == 0) {
+      return "quatro mil"
+      }        
+      if (n[3] < 10) {
+          return "quatro mil e " + verArr1(n[3])
+        }
+      }
+    }
+      if (n[1] == 0 && n[2] !== 0){
+       if (juntar2 >= 10 && juntar2 < 20) {
+        return "quatro mil e " + verArr2(juntar2)
+      } //112
+        else if (juntar2 >= 20 && juntar2 < 100) {
+        return "quatro mil e " + verArr3(juntar2)
+        }
+      }
+      if (n[1] !== 0 && n[2] !== 0){
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "quatro mil e " + verArr4(juntar3)
+    
+        }
+}
+
+  // 5000
+  if (n[0] == 5) {
+    if (n[1] == 0 && n[2] == 0){
+      if(n[3] == 0) {
+      return "cinco mil"
+      }        
+      if (n[3] < 10) {
+          return "cinco mil e " + verArr1(n[3])
+        }
+      }
+    }
+      if (n[1] == 0 && n[2] !== 0){
+       if (juntar2 >= 10 && juntar2 < 20) {
+        return "cinco mil e " + verArr2(juntar2)
+      } 
+        else if (juntar2 >= 20 && juntar2 < 100) {
+        return "cinco mil e " + verArr3(juntar2)
+        }
+      }
+      if (n[1] !== 0 && n[2] !== 0){
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "cinco mil e " + verArr4(juntar3)
+    
+        }
+}
+
+  // 6000
+  if (n[0] == 6) {
+    if (n[1] == 0 && n[2] == 0){
+      if(n[3] == 0) {
+      return "seis mil"
+      }        
+      if (n[3] < 10) {
+          return "seis mil e " + verArr1(n[3])
+        }
+      }
+    }
+      if (n[1] == 0 && n[2] !== 0){
+       if (juntar2 >= 10 && juntar2 < 20) {
+        return "seis mil e " + verArr2(juntar2)
+      } 
+        else if (juntar2 >= 20 && juntar2 < 100) {
+        return "seis mil e " + verArr3(juntar2)
+        }
+      }
+      if (n[1] !== 0 && n[2] !== 0){
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "seis mil e " + verArr4(juntar3)
+    
+        }
+}
+
+  // 7000
+  if (n[0] == 7) {
+    if (n[1] == 0 && n[2] == 0){
+      if(n[3] == 0) {
+      return "sete mil"
+      }        
+      if (n[3] < 10) {
+          return "sete mil e " + verArr1(n[3])
+        }
+      }
+    }
+      if (n[1] == 0 && n[2] !== 0){
+       if (juntar2 >= 10 && juntar2 < 20) {
+        return "sete mil e " + verArr2(juntar2)
+      } //112
+        else if (juntar2 >= 20 && juntar2 < 100) {
+        return "sete mil e " + verArr3(juntar2)
+        }
+      }
+      if (n[1] !== 0 && n[2] !== 0){
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "sete mil e " + verArr4(juntar3)
+    
+        }
+}
+
+  // 8000
+  if (n[0] == 8) {
+    if (n[1] == 0 && n[2] == 0){
+      if(n[3] == 0) {
+      return "oito mil"
+      }        
+      if (n[3] < 10) {
+          return "oito mil e " + verArr1(n[3])
+        }
+      }
+    }
+      if (n[1] == 0 && n[2] !== 0){
+       if (juntar2 >= 10 && juntar2 < 20) {
+        return "oito mil e " + verArr2(juntar2)
+      } //112
+        else if (juntar2 >= 20 && juntar2 < 100) {
+        return "oito mil e " + verArr3(juntar2)
+        }
+      }
+      if (n[1] !== 0 && n[2] !== 0){
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "oito mil e " + verArr4(juntar3)
+    
+        }
+}
+
+  // 9000
+  if (n[0] == 9) {
+    if (n[1] == 0 && n[2] == 0){
+      if(n[3] == 0) {
+      return "nove mil"
+      }        
+      if (n[3] < 10) {
+          return "nove mil e " + verArr1(n[3])
+        }
+      }
+    }
+      if (n[1] == 0 && n[2] !== 0){
+       if (juntar2 >= 10 && juntar2 < 20) {
+        return "nove mil e " + verArr2(juntar2)
+      } //112
+        else if (juntar2 >= 20 && juntar2 < 100) {
+        return "nove mil e " + verArr3(juntar2)
+        }
+      }
+      if (n[1] !== 0 && n[2] !== 0){
+       if (juntar3>= 100 && juntar3< 2000) {
+        return "nove mil e " + verArr4(juntar3)
     
         }
 }
@@ -346,7 +555,7 @@ if (arr3.includes(num)) {
 if (arr4.includes(num)) {
   console.log(verArr4(num))
 }
-//  1000 a 10000
+//  1000 a 9999
 if (arr5.includes(num)) {
   console.log(verArr5(num))
 }
