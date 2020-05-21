@@ -311,6 +311,7 @@ function verArr5() {
           return "mil e " + verArr1(n[3])
         }
       }
+    }
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "mil e " + verArr2(juntar2)
@@ -323,7 +324,7 @@ function verArr5() {
        if (juntar3>= 100 && juntar3< 2000) {
         return "mil e " + verArr4(juntar3)
     
-        }}
+        }
 }
 
   // 2000
@@ -336,7 +337,7 @@ function verArr5() {
           return "dois mil e " + verArr1(n[3])
         }
       }
-    
+    }
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "dois mil e " + verArr2(juntar2)
@@ -349,7 +350,7 @@ function verArr5() {
        if (juntar3>= 100 && juntar3< 2000) {
         return "dois mil e " + verArr4(juntar3)
     
-        }}
+        }
 }
 
   // 3000
@@ -362,7 +363,7 @@ function verArr5() {
           return "três mil e " + verArr1(n[3])
         }
       }
-    
+    }
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "três mil e " + verArr2(juntar2)
@@ -376,7 +377,7 @@ function verArr5() {
         return "três mil e " + verArr4(juntar3)
     
         }
-}}
+}
 
   // 4000
   if (n[0] == 4) {
@@ -388,7 +389,7 @@ function verArr5() {
           return "quatro mil e " + verArr1(n[3])
         }
       }
-    
+    }
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "quatro mil e " + verArr2(juntar2)
@@ -403,7 +404,6 @@ function verArr5() {
     
         }
 }
-  }
 
   // 5000
   if (n[0] == 5) {
@@ -415,7 +415,7 @@ function verArr5() {
           return "cinco mil e " + verArr1(n[3])
         }
       }
-    
+    }
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "cinco mil e " + verArr2(juntar2)
@@ -430,7 +430,7 @@ function verArr5() {
     
         }
 }
-  }
+
   // 6000
   if (n[0] == 6) {
     if (n[1] == 0 && n[2] == 0){
@@ -441,8 +441,8 @@ function verArr5() {
           return "seis mil e " + verArr1(n[3])
         }
       }
-    
-      if (n[1] == 0){
+    }
+      if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "seis mil e " + verArr2(juntar2)
       } 
@@ -455,7 +455,7 @@ function verArr5() {
         return "seis mil e " + verArr4(juntar3)
     
         }
-}}
+}
 
   // 7000
   if (n[0] == 7) {
@@ -467,7 +467,7 @@ function verArr5() {
           return "sete mil e " + verArr1(n[3])
         }
       }
-    
+    }
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "sete mil e " + verArr2(juntar2)
@@ -482,7 +482,7 @@ function verArr5() {
     
         }
 }
-  }
+
   // 8000
   if (n[0] == 8) {
     if (n[1] == 0 && n[2] == 0){
@@ -493,7 +493,7 @@ function verArr5() {
           return "oito mil e " + verArr1(n[3])
         }
       }
-    
+    }
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "oito mil e " + verArr2(juntar2)
@@ -508,7 +508,6 @@ function verArr5() {
     
         }
 }
-  }
 
   // 9000
   if (n[0] == 9) {
@@ -520,7 +519,7 @@ function verArr5() {
           return "nove mil e " + verArr1(n[3])
         }
       }
-    
+    }
       if (n[1] == 0 && n[2] !== 0){
        if (juntar2 >= 10 && juntar2 < 20) {
         return "nove mil e " + verArr2(juntar2)
@@ -534,7 +533,7 @@ function verArr5() {
         return "nove mil e " + verArr4(juntar3)
     
         }
-}}
+}
 }
 // 0 a 9
 if (arr1.includes(num)) {

@@ -11,3 +11,21 @@ var caminhoObj = 'carro.json'
 var objDeserializado = fs.readFileSync(caminhoObj)
 var carro =JSON.parse(objDeserializado)
 console.log(carro)
+
+
+
+while (true) {
+    var houveTroca = false;
+    for (var i = 0; i < numeros.length - 1; i++)    {
+        var n1 = numeros[i];
+        var n2 = numeros[i + 1];
+        if (n1 > n2) {
+            numeros[i] = n2;
+            numeros[i + 1] = n1;
+            houveTroca = true;
+        }
+    }
+    if (houveTroca == false) {
+        break;
+    }
+}
