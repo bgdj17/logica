@@ -11,16 +11,30 @@ var n1 = rs.questionInt("Digite o primeiro número de 1 à 100. ")
 var n2 = rs.questionInt("Digite o segundo número de 1 à 100. . ")
 if (n1 > n2) {
     while (n1 > n2) {
-        if (n2 % 7 == 0 && n2 % 5) {
-            console.log(n2, "Ping Pong")
+        if (n2 % 7 == 0) {
+            console.log(n2, "Ping")
+        }
+        else if(n2 % 5==0){
+            console.log(n2, "Pong")
+        }
+        
+        else if (n2 % 7 == 0 && n1 % 5 == 0) {
+            console.log(n1, "Ping Pong")
 
         } else {
-            console.log(n2)
+            console.log(n1)
         }
         n2++
     }
 } else {
     while (n2 > n1) {
+        if (n1 % 7 == 0) {
+            console.log(n2, "Ping")
+        }
+        if(n1 % 5==0){
+            console.log(n2, "Pong")
+        }
+
         if (n1 % 7 == 0 && n1 % 5 == 0) {
             console.log(n1, "Ping Pong")
 
