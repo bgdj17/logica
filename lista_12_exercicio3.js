@@ -6,18 +6,8 @@
 // Após isso no arquivo da atividade importe o módulo criado e solicite ao usuário 3
 // números, utilize o módulo criado para calcular a média e no final imprima o resultado
 // para o usuário.
-var arrNum = [2,3,3,5,9]
-
-function media(arr){
-    var resultado = 0
-    console.log(resultado)
-     for(var i =0; i<= arr.length; i++){
-        
-        var resultado = resultado + arr[i]
-        console.log(resultado)
-    }
-   }
-
-
-var mediaArr = media(arrNum)
-console.log(mediaArr)
+var rs = require("readline-sync")
+var cmedia = require("./node_modules/calcula-media")
+var numeros = [rs.questionInt("Digite um número > "), rs.questionInt("Digite um número > "), rs.questionInt("Digite um número > " )]
+var calculoMedia = cmedia.calculaMedia(numeros)
+console.log(calculoMedia)
