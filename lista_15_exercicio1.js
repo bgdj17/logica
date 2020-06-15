@@ -11,7 +11,7 @@ const db = new Sqlite.Database("exercicios.db", erro=>{
         console.log(erro)
     }
     else{
-        console.log("Conectadao com sucesso")
+        console.log("Conectado. Operação realizada com sucesso!")
         // db.run('CREATE TABLE carros (nome string, cor string, ano number, valor number)');
     }
 });
@@ -29,6 +29,32 @@ var trataErro = ((erro) =>{
 })
 db.run(query,[nome, cor, ano, valor], trataErro)
 }
-if(opcao === "D"){
-    var ler = "SELECT * FROM carros"
+function pesquisaCarro(){
+    var ler = "SELECT * FROM carros" 
+    db.all(ler,(erro, listaCarro)=>{
+    if(erro){
+        console.log(erro.message)
+    }
+    listaCarro.forEach(element =>{
+        console.log(element)
+    })
+    })
+}
+if(opcao === "L"){
+    pesquisaCarro()
+}
+function deletar(nome){
+    var deletarCarro = 'DELETE FROM Carros WHERE nome=?'
+    db.run(deletarCarro, nome, (erro)=>{
+        if(erro){
+            console.log(erro.message)
+        }
+        else{
+        console.log("Dados Deletados com sucesso!")
+    }
+    })
+}
+if(opcao ==="D"){
+    var opcaoDeletar = rs.question("Qual carro gostaria de deletar? ")
+    deletar(opcaoDeletar)
 }
