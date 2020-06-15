@@ -40,4 +40,4 @@ for(var i=0; i< cadAlunos.length; i++){
     }
 }
 
-console.log("Os alunos mais velhos são: ", maiores)
+console.log("Alunos mais velhos: ", maiores)

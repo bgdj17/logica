@@ -7,7 +7,14 @@
 // números, utilize o módulo criado para calcular a média e no final imprima o resultado
 // para o usuário.
 var rs = require("readline-sync")
-var cmedia = require("./node_modules/calcula-media")
-var numeros = [rs.questionInt("Digite um número > "), rs.questionInt("Digite um número > "), rs.questionInt("Digite um número > " )]
-var calculoMedia = cmedia.calculaMedia(numeros)
-console.log(calculoMedia)
+var arrNum = [5, 5, 3]
+
+var media = (arr) =>{
+    var result = 0
+    arr.forEach(element => {
+        result = result + element
+     });
+    return result / arr.length
+}
+console.log(media(arrNum))
+exports.calculoMedia = media

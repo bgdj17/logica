@@ -17,19 +17,17 @@ class Carro{
      }    
 }
 var cadCarros = []
-var qntCarrosNovos = 5
-cadCarros.forEach((5) => {
-nome =rs.question("Nome > ")
-this.modelo =rs.question("Modelo > ")
-this.cor =rs.question("Cor > ")
-cadCarros.push(new Carro(this.nome, this.modelo, this.cor))
+for(var i=0; i<2; i++){
+nome =rs.question("Digite o nome do carro >").toLocaleLowerCase
+modelo = rs.question("Digite o modelo > ").toLocaleLowerCase
+cor = rs.question("Digite a cor >").toLocaleLowerCase
+cadCarros.push(new Carro(nome, modelo, cor))
+}
+if(cadCarros[0].nome == cadCarros[1].nome && cadCarros[0].modelo == cadCarros[1].modelo){
+    console.log("Esses carros são iguas")
+}
+else{
+    console.log("Esses carros não são iguais")
+}
 
-});
 
-// for(var i = 0; i< qntCarrosNovos ; i++){
-// var nome =rs.question("Nome > ")
-// var modelo =rs.question("Modelo > ")
-// var cor =rs.question("Cor > ")
-// cadCarros.push(new Carro(nome, modelo, cor))
-// }
-console.log(cadCarros)
