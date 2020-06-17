@@ -7,14 +7,7 @@
 // números, utilize o módulo criado para calcular a média e no final imprima o resultado
 // para o usuário.
 var rs = require("readline-sync")
-var arrNum = [5, 5, 3]
-
-var media = (arr) =>{
-    var result = 0
-    arr.forEach(element => {
-        result = result + element
-     });
-    return result / arr.length
-}
-console.log(media(arrNum))
-exports.calculoMedia = media
+var media = require('./calcula-media')
+var arrNum = [rs.questionInt("Digite a primeira nota "), rs.questionInt("Digite a segunda nota "), rs.questionInt("Digite a terceira nota "),]
+var resultadoMedia = media.calculoMedia(arrNum)
+console.log("Média = ", resultadoMedia)

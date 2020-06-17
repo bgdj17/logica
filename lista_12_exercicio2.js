@@ -8,36 +8,33 @@
 // Ao final o algoritmo deve iterar pelo array de alunos e descobrir quais são os alunos
 // com maior idade e imprimir seus nomes.
 var rs = require("readline-sync");
-class Alunos{
-    constructor(nome, idade){
+var media = require("./calcula-media")
+class Alunos {
+    constructor(nome, idade) {
         this.nome = nome
         this.idade = idade
-     }
-      getNome(){
-          return this.nome
-      }
-      getIdade(){
-          return this.idade
-      }
+    }
 }
 var cadAlunos = []
+var quantidadeCadastradoNovo = 3
+for (var i = 0; i < quantidadeCadastradoNovo; i++) {
+    var nome = rs.question("Digite o nome do aluno. ")
+    var idade = rs.questionInt("Digite a idade. ")
+    cadAlunos.push(new Alunos(nome, idade))
+}
 var maior = 0
 var alunoMaior = 0
-var maiores =[]
-for(var i =0; i<5; i++){
-    var nome= rs.question("Digite o nome. ")
-    var idade= rs.questionInt("Digite a idade. ")
-    cadAlunos.push(new Alunos(nome, idade))
-    if(cadAlunos[i].idade > maior)  {
-        maior = cadAlunos[i].idade
-        alunoMaior= cadAlunos.indexOf(cadAlunos[i])
-       
+cadAlunos.forEach(aluno => {
+    if (aluno.idade > maior) {
+        maior = aluno.idade
+        alunoMaior = aluno
     }
-}
-for(var i=0; i< cadAlunos.length; i++){
-    if(maior <=cadAlunos[i].idade){
-        maiores.push(cadAlunos[i])
-    }
-}
+});
+var alunosMaiores = cadAlunos.filter(aluno => {
+   return maior <= aluno.idade
+});
+var mediaIdade = media.calculaMediaIdadeAluno(cadAlunos)
+console.log("Alunos cadastrados", cadAlunos)
+console.log("Alunos mais velhos: ", alunosMaiores)
+console.log("A média de idade da turma é ", mediaIdade)
 
-console.log("Alunos mais velhos: ", maiores)

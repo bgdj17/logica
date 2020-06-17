@@ -12,7 +12,7 @@ const db = new Sqlite.Database("exercicios.db", erro=>{
     }
     else{
         console.log("Conectado. Operação realizada com sucesso!")
-        // db.run('CREATE TABLE carros (nome string, cor string, ano number, valor number)');
+        db.run('CREATE TABLE carros (nome string, cor string, ano number, valor number)');
     }
 });
 var opcao =rs.question("(I) para Inserir, (D)para Deletar, (L) para Ler .").toUpperCase()

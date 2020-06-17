@@ -9,6 +9,6 @@ var json = fs.readFileSync("cars.json")
 var carros = JSON.parse(json)
 var pesquisaCarrosPotentes = rs.questionInt("Digite o valor para pesquisa >")
 var resultadoPesquisaPCarrosPotentes = carros.filter((element)=>{
-   if(element.Horsepower > pesquisaCarrosPotentes)
-   console.log(element)
+   return element.Horsepower > pesquisaCarrosPotentes
 })
+console.log(resultadoPesquisaPCarrosPotentes)

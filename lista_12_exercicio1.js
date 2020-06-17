@@ -18,13 +18,14 @@ class Carro{
 }
 var cadCarros = []
 for(var i=0; i<2; i++){
-nome =rs.question("Digite o nome do carro >").toLocaleLowerCase
-modelo = rs.question("Digite o modelo > ").toLocaleLowerCase
-cor = rs.question("Digite a cor >").toLocaleLowerCase
+nome =rs.question("Digite o nome do carro >")
+modelo = rs.question("Digite o modelo > ")
+cor = rs.question("Digite a cor >")
 cadCarros.push(new Carro(nome, modelo, cor))
 }
-if(cadCarros[0].nome == cadCarros[1].nome && cadCarros[0].modelo == cadCarros[1].modelo){
-    console.log("Esses carros são iguas")
+if(cadCarros[0].nome === cadCarros[1].nome && cadCarros[0].modelo === cadCarros[1].modelo){
+
+    console.log("Esses carros são iguais")
 }
 else{
     console.log("Esses carros não são iguais")
